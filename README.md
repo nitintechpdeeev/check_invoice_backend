@@ -8,15 +8,20 @@
 **Setup & Installation**
 
 **Clone the Repository**
-git clone <[repository_url](https://github.com/nitintechpdeeev/check_invoice_backend.git)>
-cd <check_invoice_backend>
+* git clone <[repository_url](https://github.com/nitintechpdeeev/check_invoice_backend.git)>
+* cd <check_invoice_backend>
 
 **Install Dependencies**
-bundle install
+* bundle install
 
 **Set up the database:**
-rails db:create db:migrate db:seed
+* rails db:create db:migrate db:seed
 
 **Start the Rails server**
-rails server
+* rails server
 
+**Included Gems**
+* sqlite3: Database adapter
+* puma: Web server
+* rack-cors: CORS handling
+* active_model_serializers: JSON serialization

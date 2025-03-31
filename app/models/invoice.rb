@@ -3,5 +3,5 @@ class Invoice < ApplicationRecord
   has_many :check_invoices, dependent: :destroy
   has_many :checks, through: :check_invoices
 
-  validates :number, presence: true, uniqueness: { message: "Invoice" }, numericality: { only_integer: true }
+  validates :number, presence: true, uniqueness: { message: "Invoice" }, numericality: { only_integer: true, greater_than: 0, message: "Invoice Positive"  }
 end

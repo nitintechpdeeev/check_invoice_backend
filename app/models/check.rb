@@ -5,6 +5,6 @@ class Check < ApplicationRecord
 
   has_one_attached :image
 
-  validates :number, presence: true, uniqueness: { message: "Check" }, numericality: { only_integer: true }
+  validates :number, presence: true, uniqueness: { message: "Check" }, numericality: { only_integer: true, greater_than: 0, message: "Check Positive"  }
   validates :image, presence: true
 end

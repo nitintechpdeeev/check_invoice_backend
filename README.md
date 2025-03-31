@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Requirements**
+* Ruby 3.3.0
+* Rails 7.1.5.1
+* SQLite3
 
-Things you may want to cover:
+**Setup & Installation**
 
-* Ruby version
+**Clone the Repository**
+* git clone <[repository_url](https://github.com/nitintechpdeeev/check_invoice_backend.git)>
+* cd <check_invoice_backend>
 
-* System dependencies
+**Install Dependencies**
+* bundle install
 
-* Configuration
+**Set up the database:**
+* rails db:create db:migrate db:seed
 
-* Database creation
+**Start the Rails server**
+* rails server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Included Gems**
+* sqlite3: Database adapter
+* puma: Web server
+* rack-cors: CORS handling
+* active_model_serializers: JSON serialization
